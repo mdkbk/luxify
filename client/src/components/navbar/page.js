@@ -1,11 +1,9 @@
 // Navbar.js
-import { useEffect } from 'react';
-import Image from 'next/image';
+import { useEffect } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
-  useEffect(() => {
-    
-  }, []); 
+  useEffect(() => {}, []);
 
   return (
     <nav className="bg-white shadow">
@@ -22,15 +20,25 @@ const Navbar = () => {
           </div>
           {/* Navigation Links */}
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-gray-800">Home</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">Shop</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">About</a>
+            <a href="#" className="text-gray-600 hover:text-gray-800">
+              Home
+            </a>
+            <a href="#" className="text-gray-600 hover:text-gray-800">
+              Shop
+            </a>
+            <a href="#" className="text-gray-600 hover:text-gray-800">
+              About
+            </a>
             {/* Add more navigation links as needed */}
           </div>
           {/* Sign-up/Login Buttons */}
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-gray-800">Sign Up</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">Login</a>
+            <a href="/register" className="text-gray-600 hover:text-gray-800">
+              Sign Up
+            </a>
+            <a href="/login" className="text-gray-600 hover:text-gray-800">
+              Login
+            </a>
           </div>
         </div>
       </div>
