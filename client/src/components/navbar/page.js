@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    
+    // Add any additional setup or cleanup logic here
   }, []); 
 
   return (
@@ -20,12 +20,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
+            <a href = "/">
             <Image
               src="/luxify-logo.png" // Replace with your logo image
               alt="Luxify Logo"
               width={120}
               height={40}
             />
+            </a>
           </div>
           {/* Navigation Links */}
           <div className="flex space-x-4">
